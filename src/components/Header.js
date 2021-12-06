@@ -3,19 +3,14 @@ import Container from '@mui/material/Container';
 import ThemeSwitch from './ThemeSwitch';
 import { ConnectButton } from './styleHook';
 
-export default function Header({ connected, address, handleConnect, ...props }) {
+export default function Header({ connected, address, handleConnect, network, ...props }) {
 
   return (
     <div className="header">
       <Container>
         <div className="header-content">
           <div className="logo">
-            <img
-              src="../logo.png"
-              alt=""
-              data-nsfw-filter-status
-            />
-
+            <h2>{network}</h2>
           </div>
           <div className="header-actions">
             <ThemeSwitch />

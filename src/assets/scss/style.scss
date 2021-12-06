@@ -1,41 +1,48 @@
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-        Helvetica Neue, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .card-image {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .header {
-    .logo {
-        padding: 15px 0;
-        img {
-            height: 40px;
-        }
+  .logo {
+    padding: 15px 0;
+    img {
+      height: 40px;
     }
+    h2 {
+      color: #333;
+    }
+  }
 }
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
 }
 .dark {
-    background: #2e2e2e;
+  background: #2e2e2e;
+  .header .logo h2 {
+    color: #ffdf88;
+  }
 }
 .light {
-    background: #efefef;
+  background: #efefef;
 }
