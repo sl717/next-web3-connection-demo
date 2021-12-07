@@ -8,7 +8,6 @@ const WrapperContent = styled.div`
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    min-height: 100vh;
 `;
 const MainBox = styled.div`
     margin-right: auto;

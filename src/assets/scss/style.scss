@@ -1,3 +1,4 @@
+*,
 html,
 body {
   padding: 0;
@@ -40,9 +41,55 @@ a {
 .dark {
   background: #2e2e2e;
   .header .logo h2 {
-    color: #ffdf88;
+    color: #999;
   }
 }
 .light {
   background: #efefef;
+}
+.MuiFormControlLabel-root {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 100000;
+  position: fixed;
+  background: #3e3e3ee3;
+  width: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.loading.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.2s;
+}
+.header-link {
+  font-size: 16px;
+  font-weight: 900;
+  color: #999;
+  margin-right: 20px;
+}
+
+.light.dark {
+  .header-link {
+    color: #333 !important;
+  }
+}
+@media (max-width: 576px) {
+  .header-content {
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+#__next {
+  min-height: 100vh;
 }
