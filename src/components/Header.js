@@ -22,7 +22,7 @@ export default function Header({ connected, address, handleConnect, network, ...
             <ConnectButton color="primary" variant="contained" onClick={handleConnect} size="large" disabled={connected}>
               {!connected ? "CONNECT" : "0x" + address.slice(2, 4) + "..." + address.slice(38, 42)}
             </ConnectButton>
-            <ThemeSwitch />
+            {/* <ThemeSwitch /> */}
           </div>
         </div>
       </Container>

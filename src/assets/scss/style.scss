@@ -39,10 +39,37 @@ a {
   padding: 15px 0;
 }
 .dark {
-  background: #2e2e2e;
+  background: linear-gradient(158deg, #292929, #272727);
   .header .logo h2 {
     color: #999;
   }
+}
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: chartreuse;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+  svg {
+    font-size: 14px;
+  }
+}
+.slider-left {
+  left: 10px;
+}
+.slider-right {
+  right: 10px;
+}
+.slider-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 .light {
   background: #efefef;

@@ -10,6 +10,7 @@ import { ContentCopyRounded, ArrowDownwardRounded, CallMadeRounded, CompareArrow
 import { ButtonGroup } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 import ThemeContext from '../components/ThemeContext'
+import ImageSlider from '../components/ImageSlider'
 
 export default function Home({ connected, address, getResult, balance, symbol, ...props }) {
   const { themes } = useContext(ThemeContext)
@@ -66,8 +67,9 @@ export default function Home({ connected, address, getResult, balance, symbol, .
             </IconButton>
           </ReactCopyButtonWrapper>
         </Typography>
+        <ImageSlider />
         <CardContent>
-          <img src='../developer.svg' className={globalClasses.coverImage} data-nsfw-filter-status />
+          {/* <img src='../developer.svg' className={globalClasses.coverImage} data-nsfw-filter-status /> */}
           <Typography component='h1' className={globalClasses.balanceText}>
             {connected &&
               <>

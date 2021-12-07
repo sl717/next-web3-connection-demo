@@ -10,6 +10,7 @@ const WrapperContent = styled.div`
     margin-left: auto;
 `;
 const MainBox = styled.div`
+    padding-top: 40px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
