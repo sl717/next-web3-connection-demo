@@ -176,13 +176,6 @@ export default function ImageSlider() {
           alt=""
         />
       </div>
-      <div key={24}>
-        <img
-          className="slider-image"
-          src="/minion/minion (24).jpg"
-          alt=""
-        />
-      </div>
       <div key={25}>
         <img
           className="slider-image"
